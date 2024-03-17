@@ -1,74 +1,259 @@
 body {
-  font-family: "Poppins", sans-serif;
-  background: #272044;
+  margin: 0;
+  padding: 0;
 }
-
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
+:root {
+  --secundary-text-color: white;
+  --title-font-family: Waterfall, sans-serif;
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../images/lisbon.png");
-  background-repeat: no-repeat;
+  background-image: url(img/30paul1-superJumbo.png);
   background-size: cover;
-  color: white;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 80vh;
   text-align: center;
-  padding: 200px 0;
 }
-
-header h1 {
-  font-weight: 700;
-  font-size: 96px;
-  line-height: 1;
-  margin: 30px 0;
+.header-text {
+  padding: 115px 0;
 }
-
-header h2 {
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 1.5;
-  margin: 0;
-}
-
 header h3 {
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 1.5;
-  letter-spacing: 5px;
-  margin: 0;
+  color: var(--secundary-text-color);
+  font-size: 50px;
+  font-family: Trirong, serif;
+}
+header h1 {
+  color: var(--secundary-text-color);
+  font-size: 150px;
+  font-family: var(--title-font-family);
+  font-weight: bold;
+}
+header h2 {
+  color: var(--secundary-text-color);
+  font-size: 40px;
+  font-family: Trirong, serif;
+  margin-bottom: 40px;
 }
 
 header a {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.5;
-  text-align: center;
-  color: #272044;
-  padding: 16px 32px;
-  margin-top: 32px;
-  display: inline-block;
-  letter-spacing: 3px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
   text-decoration: none;
-  text-transform: uppercase;
-  background: white;
+
+  font-family: Trirong, serif;
+}
+.container {
+  margin: 100px;
+}
+.img-fluid {
+  border-radius: 10px;
+  width: 80%;
+  height: auto;
+  margin-left: 50px;
+}
+.about-section {
+  padding: 82px;
+}
+.about-section-content {
+  padding: 0;
+  margin-right: 10px;
+}
+.about-section-content h1 {
+  color: lightgrey;
+  font-size: 20px;
+}
+.about-section-content h3 {
+  font-size: 20px;
+  color: grey;
 }
 
-@media (max-width: 900px) {
+/*section more-info*/
+.more-info {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 80px;
+  background-color: #f1e7e5;
+  text-align: center;
+  color: #262425;
+}
+.more-info h4 {
+  color: #27204450;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.more-info h2 {
+  color: #424146;
+  font-size: 70px;
+  margin-top: 0;
+  font-family: Trirong, serif;
+}
+
+.grid-2 {
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.book-card {
+  max-width: 400px;
+  background-color: white;
+  margin: 60px auto;
+}
+.book-card img {
+  max-width: 400px;
+}
+.card-text {
+  margin: 30px 25px;
+}
+.card-text h5 {
+  margin-bottom: 20px;
+  font-size: 21px;
+  color: #424146;
+}
+.card-text p {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.6em;
+}
+.card-btn {
+  padding: 30px 0 50px 0;
+}
+
+.card-btn a {
+  text-decoration: none;
+  color: white;
+  background-color: #424146;
+  font-size: 12px;
+  padding: 10px 25px;
+  border-radius: 30px;
+}
+.books {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 80px;
+  background-color: #f1e7e5;
+  text-align: center;
+  color: #424146;
+}
+.books h2 {
+  font-family: Trirong, serif;
+  color: #424146;
+  font-size: 70px;
+  margin-top: 0;
+}
+
+.books h5 {
+  color: #424146;
+}
+.card-text p {
+  color: #424146;
+}
+
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(51, 34, 22, 0.9),
+      rgba(41, 37, 35, 0.9)
+    ),
+    url("https://i0.wp.com/elgeneracionalpost.com/wp-content/uploads/2023/10/Portada-1.jpg?fit=696%2C464&ssl=1");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+footer h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer a {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  margin-right: 20px;
+  line-height: 24px;
+  color: white;
+}
+.grid-4 {
+  margin: 60px 50px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 70px;
+}
+.column {
+  max-width: 440px;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
+    height: 100vh;
   }
-
   header h1 {
-    font-size: 48px;
+    font-size: 80px;
   }
 
   header h2 {
-    font-size: 20px;
+    font-size: 28px;
+    margin-top: 5px;
+    margin-bottom: 94px;
   }
 
   header h3 {
-    font-size: 12px;
+    font-size: 40px;
+  }
+  header a {
+    margin-top: 60px;
+  }
+  h4 {
+    margin-bottom: 0;
+  }
+  .about-section-content {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .grid-1,
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .grid-1 {
+    padding: 25px;
+  }
+
+  .grid-3,
+  .grid-4 {
+    margin: 10px 0;
+  }
+
+  .grid-4 {
+    padding: 10px 25px;
+  }
+
+  .book-card {
+    max-width: 95%;
+    margin: 10px auto;
+  }
+
+  .book-card img {
+    max-width: 100%;
+  }
+
+  section.image-gallery {
+    padding: 20px;
+  }
+
+  section.book-recommendations {
+    padding: 20px;
   }
 }
